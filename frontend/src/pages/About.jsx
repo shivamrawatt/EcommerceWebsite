@@ -17,7 +17,7 @@ const About = () => {
           <b className='text-gray-800'>Our Mission</b>
           <p>At Trendify, our mission is to empower you to express your unique style with high-quality, on-trend fashion. We strive to make fashion accessible to all, offering diverse products that inspire confidence.</p>
           <b className='text-gray-800'>Our Vision</b>
-          <p>At Trendify, our vision is to be a global fashion leader, known for cutting-edge style and quality. We aim to inspire confidence and creativity, making Trendify the go-to choice for individual expression.</p>
+          <p>At Trendify, our vision is to be a fashion company, known for cutting-edge style and quality. We aim to inspire confidence and creativity, making Trendify the go-to choice for individual expression.</p>
         </div>
       </div>
       <div className='py-4 text-xl'>

@@ -96,7 +96,7 @@ const Product = () => {
       <div className='mt-20'>
         <div className='flex'>
           <b className='px-5 py-3 text-sm border'>Description</b>
-          <p className='px-5 py-3 text-sm border'>Reviews (122)</p>
+          <p className='px-5 py-3 text-sm border'>Reviews (37)</p>
         </div>
         <div className='flex flex-col gap-4 px-6 py-6 text-sm text-gray-500 border'>
           <p>Elevate your style with our meticulously crafted Trendify quality products. Designed with a perfect balance of elegance and practicality, these Trendify quality products made from premium materials that ensure both durability and comfort.</p>
