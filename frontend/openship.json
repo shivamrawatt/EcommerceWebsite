@@ -2,7 +2,17 @@
   "$schema": "https://openship.io/openship.schema.json",
   "monorepo": {
     "apps": [
+    
+     
       {
+        "name": "backend",
+        "rootDirectory": "backend",
+        "framework": "nodejs",
+        "runtime": "docker",
+        "port": 5000
+      },
+     
+        {
         "name": "frontend",
         "rootDirectory": "frontend",
         "framework": "vite",
@@ -17,14 +27,8 @@
         "buildCommand": "npm run build",
         "outputDirectory": "dist",
         "productionMode": "static"
-      },
-      {
-        "name": "backend",
-        "rootDirectory": "backend",
-        "framework": "nodejs",
-        "runtime": "docker",
-        "port": 5000
       }
+     
     ]
   }
 }
