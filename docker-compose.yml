@@ -1,0 +1,60 @@
+services:
+
+  frontend:
+    build:
+      context: .
+      dockerfile: openship/Dockerfile.frontend
+      args:
+        VITE_BACKEND_URL: ${VITE_BACKEND_URL}
+
+    ports:
+      - "8080"
+
+    restart: unless-stopped
+
+    depends_on:
+      - backend
+
+
+  admin:
+    build:
+      context: .
+      dockerfile: openship/Dockerfile.admin
+      args:
+        VITE_BACKEND_URL: ${VITE_BACKEND_URL}
+
+    ports:
+      - "8080"
+
+    restart: unless-stopped
+
+    depends_on:
+      - backend
+
+
+  backend:
+    build:
+      context: .
+      dockerfile: openship/Dockerfile.backend
+
+    ports:
+      - "5000"
+
+    restart: unless-stopped
+
+    environment:
+      NODE_ENV: ${NODE_ENV}
+      PORT: ${PORT}
+
+      MONGODB_URI: ${MONGODB_URI}
+      RAZORPAY_KEY_ID: ${RAZORPAY_KEY_ID}
+      RAZORPAY_KEY_SECRET: ${RAZORPAY_KEY_SECRET}
+      CLOUDINARY_NAME: ${CLOUDINARY_NAME}
+      CLOUDINARY_API_KEY:  ${CLOUDINARY_API_KEY}
+      CLOUDINARY_SECRET_KEY: ${CLOUDINARY_SECRET_KEY}
+
+      JWT_SECRET: ${JWT_SECRET}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+
+      
