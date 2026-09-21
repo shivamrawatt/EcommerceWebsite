@@ -7,7 +7,7 @@
       {
         "name": "backend",
         "rootDirectory": "backend",
-        "framework": "nodejs",
+        "framework": "express",
         "runtime": "docker",
         "port": 5000
       },
