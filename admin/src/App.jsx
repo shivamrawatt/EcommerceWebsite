@@ -11,6 +11,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 export const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
+console.log("BACKEND URL:", backendUrl);
+
 export const currency = (price) => {
   return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'INR' }).format(price);
 };

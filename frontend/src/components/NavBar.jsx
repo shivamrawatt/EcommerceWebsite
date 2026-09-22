@@ -54,7 +54,7 @@ const NavBar = () => {
                 {/* 🛠️ Admin Login Button (only if not logged in) */}
                 {!token && (
                     <a 
-                        href="http://localhost:5174/login"   // change to your admin panel URL
+                        href="https://admin.shivamrawat.online"   // change to your admin panel URL
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="px-3 py-1 text-sm text-white bg-black rounded hover:bg-gray-800"
